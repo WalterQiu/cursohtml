@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(90, 86, 86);
+    
+    margin: 0;
+}
+header{
+    background-color:rgb(5, 5, 5);
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: lavender;
+
+}
+.kaka{
+    list-style: none;
+    margin-right: 20px;
+    color:white;
+    font-size: 17px;
+    
+}
+.barra{
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    color: white;
+}
+header{
+    padding: 0 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    display: inline-block;
+    height: 30px; width: 200px;
+    text-align: center;
+}
+form{
+    display: flex;
+    align-items:center;
+}
+
+.kaka:hover{
+    cursor: pointer;
+    color: midnightblue;
+}
+h1{
+    text-align:center;
+    width: 100%;
+
+}
+.popo{
+    margin: 10px;
+    font-size: 20px;
+    color: rgba(126, 233, 93, 0.801);
+    font-weight: 800;
+    font-style: oblique;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(71, 187, 255);
+}
+figure{
+    display: inline-block;
+}
+img{
+    height: 350px;
+    border: 1px rgb(3, 3, 3) solid;
+    border-radius: 20px;
+    border-width: 2px;
+    margin-top: 30px;
+    
+}
+h1::after{
+    content: "🐖🥓🐖";
+    font-size: 25px;
+    margin: 10px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    margin:0%;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 13px;
+}
+
+.titulo:hover{
+    cursor: pointer;
+}
+.kaka::after{
+    content: "|";
+    margin: 8px;
+}
+section{
+    margin: 10px auto 0 ;
+    background-color: rgb(207, 230, 184);
+    border: 2px black solid;
+    border-radius: 12px;
+    width: 40%;
+    text-align: center;
+
+}
+.lista{
+    color: white;
+}
+.listanav{
+    display: flex;
+}
