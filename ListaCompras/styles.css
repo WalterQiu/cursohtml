@@ -4,24 +4,47 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(90, 86, 86);
-    
+    background-color: rgb(214, 213, 213);
+    height: 100vh;
     margin: 0;
 }
+
 header{
     background-color:rgb(5, 5, 5);
     font-size: 35px;
     padding-bottom: 15px;
     color: lavender;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
 
 }
+
 .kaka{
     list-style: none;
     margin-right: 20px;
     color:white;
     font-size: 17px;
-    
+    background-color: rgb(83, 83, 79);
+    padding: 10px;
+    border-radius: 10px;
 }
+
+.kaka::after{
+    margin: 8px;
+}
+
+.kaka:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
 .barra{
     padding: 0;
     font-size: 20px;
@@ -45,21 +68,28 @@ form{
     align-items:center;
 }
 
-.kaka:hover{
-    cursor: pointer;
-    color: midnightblue;
-}
 h1{
     text-align:center;
     width: 100%;
+}
+h1::after{
+    content: "🐖🥓🐖";
+    font-size: 25px;
+    margin: 10px;
+    
+}
+
+div{
+display: flex;
 
 }
+
+
 .popo{
     margin: 10px;
-    font-size: 20px;
-    color: rgba(126, 233, 93, 0.801);
-    font-weight: 800;
-    font-style: oblique;
+    font-size:23px;
+    color: rgba(16, 46, 7, 0.801);
+    font-weight: bold;  
     
 }
 a{
@@ -67,7 +97,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: rgb(71, 187, 255);
+    color: rgb(0, 2, 3);
 }
 figure{
     display: inline-block;
@@ -80,41 +110,61 @@ img{
     margin-top: 30px;
     
 }
-h1::after{
-    content: "🐖🥓🐖";
-    font-size: 25px;
-    margin: 10px;
-}
-div{
+.picture-panchis{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .titulo{
     margin:0%;
     font-size: 25px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 13px;
+
 }
 
 .titulo:hover{
     cursor: pointer;
 }
-.kaka::after{
-    content: "|";
-    margin: 8px;
-}
-section{
+.recordatorio {
     margin: 10px auto 0 ;
-    background-color: rgb(207, 230, 184);
+    background-color: rgb(152, 153, 150);
     border: 2px black solid;
     border-radius: 12px;
-    width: 40%;
+    width: 400px;
     text-align: center;
+    padding: 20px;
 
 }
 .lista{
-    color: white;
+    color: rgb(3, 3, 3);
 }
 .listanav{
     display: flex;
 }
+.panchis img{
+    margin: 0;
+    height: 60px;
+}
+footer{
+    margin: 40px 0px 0px 0px;
+    background-color: black;
+    padding: 2px;
+}
+footer p{
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+}
+.fotofooter img{
+    height: 100px;
+    margin: 0;
+
+}
+.fotofooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
