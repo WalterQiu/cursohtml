@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'PT Sans', sans-serif;
+    background-image: url(./fondo-blanco.jpg);
+}
+.title{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    
+}
+.title h1{
+    text-align: center;
+}
+article{
+background-color: rgb(170, 203, 241);    
+margin: 10px 0px; padding: 10px;
+border-radius: 10px;
+border: 1px transparent solid;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: repeat(4 auto);
+    margin: 10px auto; width: 80vh;
+    gap: 1rem;
+}
+.subtitulo, .footer{
+    background-color: black; color:rgb(238, 240, 252);
+    font-size: 1.2rem;
+    padding: 10px;
+    grid-column: span 5;
+    border-radius: 5px;
+}
+.div-article{
+    margin-top: 10px; padding: 10px;
+    border: 1px rgb(177, 175, 175) solid; 
+    border-radius: 10px;
+    font-size: 1.5rem;
+    grid-column: span 3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-article p{
+    margin-top: 10px;
+}
+aside{
+    margin: 10px; padding: 10px;
+    background-color: rgb(134, 134, 136);
+    grid-column: span 2;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+aside img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px black;
+    object-fit: cover;
+}
+aside img:hover{
+    cursor: pointer;
+}
+aside p{
+    margin-top: 5px;
+
+}
+
+aside div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+.div-article article:hover{
+    border: 1px rgb(123, 125, 197) solid;
+}
+.div-footer{
+    width:150px ; height:130px;
+    background-color: rgb(78, 75, 75);
+    border-radius:5px ;
+    display: flex; align-items: center;
+    justify-content: center; 
+    font-size: 1.4rem;
+    color: white;
+}
+.div-footer:hover{
+    border: 2px solid rgb(185, 182, 182);
+    cursor:pointer; 
+}
+footer{
+    height: 80px;
+}
+.div-dad{
+    display: flex;
+    grid-column: span 5;
+    gap:2rem;
+    justify-content: center;
+}
