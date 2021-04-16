@@ -1,0 +1,39 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(4,  1fr) ;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.subtitulo{
+    grid-column: 1 / 5;
+    margin: 10px auto;
+}
+.div-article{
+    grid-column: 1 / 4;
+    margin-left: 10px;
+}
+.div-dad div{
+max-width: 130px;
+}
+aside{
+    grid-column: 4 / 5;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside img{
+    height: 150px;
+    width: 100%;
+}
+.div-footer{
+    grid-column: 1/5;
+    grid-row: 5/6;
+    margin: 10px auto;
+}
+.div-dad{
+        grid-column: 1/5;
+        grid-row: 4/5;
+}
+.div-footer1, .div-footer2, .div-footer3, .div-footer4, .div-footer5, .div-footer5, .div-footer6{
+    width: 14%;
+}

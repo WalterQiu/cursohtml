@@ -12,64 +12,88 @@ body{
     background-image: url(./fondo-blanco.jpg);
 }
 .title{
-    margin: 15px 0;
-    font-size: 1.5rem;
-    font-style: italic;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;  font-style: italic;
+    background-color: rgb(19, 19, 70);
+    height: 75px;
 }
-.title h1{
-    text-align: center;
-}
-article{
-background-color: rgb(170, 203, 241);    
-margin: 10px 0px; padding: 10px;
-border-radius: 10px;
-border: 1px transparent solid;
+.title a{
+    text-decoration: none;
+    color:white;
 }
 
-main{
-    display: grid;
-    grid-template-columns: repeat(5 1fr);
-    grid-template-rows: repeat(4 auto);
-    margin: 10px auto; width: 80vh;
-    gap: 1rem;
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(46, 59, 116);
 }
-.subtitulo, .footer{
+nav a{
+    text-decoration: none;
+    color: white;
+    margin:0 5%   ;
+
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(203, 226, 253);
+}
+
+
+
+main{
+    margin: 10px auto; width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subtitulo{
     background-color: black; color:rgb(238, 240, 252);
     font-size: 1.2rem;
     padding: 10px;
-    grid-column: span 5;
     border-radius: 5px;
+    width: 95%;
+
 }
 .div-article{
     margin-top: 10px; padding: 10px;
-    border: 1px rgb(177, 175, 175) solid; 
+    border: 1px rgb(75, 42, 42) solid; 
     border-radius: 10px;
     font-size: 1.5rem;
-    grid-column: span 3;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: rgb(44, 44, 68);
+    width: 95%;
 }
+article{
+    background-color: rgb(170, 203, 241);    
+    margin: 10px 0px; padding: 10px;
+    border-radius: 10px;
+    border: 1px transparent solid;
+    }
 .div-article p{
     margin-top: 10px;
 }
 aside{
     margin: 10px; padding: 10px;
-    background-color: rgb(134, 134, 136);
-    grid-column: span 2;
+    background-color: rgb(167, 184, 199);
     font-size: 1.4rem;
     border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgb(75, 42, 42);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     font-weight: bolder;
+    max-width: 95%;
+
 
 }
 aside img{
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 100px;
+    margin: 0 5px;
     border-radius: 5px;
     box-shadow: 0 0 4px 1px black;
     object-fit: cover;
@@ -79,6 +103,7 @@ aside img:hover{
 }
 aside p{
     margin-top: 5px;
+    text-align: center;
 
 }
 
@@ -90,10 +115,10 @@ aside div{
     margin-top: 15px;
 }
 .div-article article:hover{
-    border: 1px rgb(123, 125, 197) solid;
+    box-shadow: 0 0 8px 1px red ;
 }
-.div-footer{
-    width:150px ; height:130px;
+.div-footer1, .div-footer2, .div-footer3, .div-footer4, .div-footer5, .div-footer5, .div-footer6{
+    width:90px ; height:130px;
     background-color: rgb(78, 75, 75);
     border-radius:5px ;
     display: flex; align-items: center;
@@ -101,16 +126,41 @@ aside div{
     font-size: 1.4rem;
     color: white;
 }
-.div-footer:hover{
-    border: 2px solid rgb(185, 182, 182);
-    cursor:pointer; 
-}
-footer{
+
+.div-footer{
     height: 80px;
+    background-color: black; color:rgb(238, 240, 252);
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+
 }
 .div-dad{
     display: flex;
-    grid-column: span 5;
-    gap:2rem;
+    gap:1.6rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+    margin: 20px 0;
     justify-content: center;
 }
+.div-dad div{
+    text-align: center;
+}
+.div-dad div:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgb(139, 60, 60);
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(19, 19, 70);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+
+}
+
+
