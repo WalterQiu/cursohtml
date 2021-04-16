@@ -90,8 +90,13 @@ aside{
     justify-content: center;
     font-weight: bolder;
     max-width: 95%;
-
-
+}
+aside a{
+    text-decoration: none;
+    color: black;
+}
+aside p:hover{
+text-decoration: underline;
 }
 aside img{
     width: 90px;

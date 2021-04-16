@@ -24,6 +24,7 @@ aside{
 aside img{
     height: 150px;
     width: 100%;
+    margin: 0;
 }
 .div-footer{
     grid-column: 1/5;
